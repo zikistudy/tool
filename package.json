@@ -1,0 +1,33 @@
+{
+  "name": "toolofvue",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc --noEmit && vite build",
+    "build:dev": "vue-tsc --noEmit && vite build --mode production",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@element-plus/icons-vue": "^2.0.9",
+    "@highlightjs/vue-plugin": "^2.1.0",
+    "axios": "^1.1.2",
+    "echarts": "^5.4.0",
+    "element-plus": "^2.2.16",
+    "highlight.js": "^11.6.0",
+    "mitt": "^3.0.0",
+    "nprogress": "^0.2.0",
+    "vue": "^3.2.37",
+    "vue-router": "^4.1.5"
+  },
+  "devDependencies": {
+    "@types/nprogress": "^0.2.0",
+    "@vitejs/plugin-vue": "^3.1.0",
+    "sass": "^1.54.9",
+    "sass-loader": "^13.0.2",
+    "typescript": "^4.6.4",
+    "vite": "^3.1.0",
+    "vue-tsc": "^0.40.4"
+  }
+}

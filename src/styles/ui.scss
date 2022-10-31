@@ -1,0 +1,68 @@
+// 修改组件库内部的样式
+/* 
+    1.需要自定义一个类名空间
+    2.在App.vue引入这个文件
+    3.在组件内需要修改样式的元素的父元素加上这个类名
+*/
+.el-input_box{
+  .el-input{
+    width: 50%;
+  }
+  .el-select{
+    .el-input{
+      width: 100%;
+    }
+  }
+}
+.el-slider-box{
+  .el-slider{
+    width: 35%;
+  }
+}
+.el-card-box{
+  .el-card{
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    position: relative;
+    .el-card__body{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      flex-direction: column;
+    }
+  }
+}
+.hljs-box{
+  .hljs{
+    font-size: 14px;
+    padding: 0;
+  }
+  .el-card__body{
+    position: relative;
+  }
+}
+.el-scrollbar-box{
+  .el-scrollbar{
+    overflow: initial;
+  }
+}
+.el-tabs__nav-box{
+  .el-tabs__nav{
+    transform: translateX(115px) !important;
+  }
+}
+.el-table-box{
+  .el-table__row .el-table_1_column_3 .cell,.el-table__row .el-table_2_column_7 .cell{
+    color:rgba(251, 75, 2, 1)
+  }
+  .el-drawer__body{
+    background: rgb(164 27 27);
+    background: linear-gradient(90deg, rgb(77 161 77 / 53%) 0%, rgb(171 76 0 / 88%) 100%)
+  }
+}

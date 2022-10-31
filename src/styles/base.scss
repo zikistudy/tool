@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#app,html,body{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+svg{
+    width: 3em;
+    height: 3em;
+}
+ul,li{
+    list-style: none;
+}
+canvas {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
